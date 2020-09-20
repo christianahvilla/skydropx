@@ -17,6 +17,7 @@
         "redux": "^4.0.5",
         "redux-devtools-extension": "^2.13.8",
         "redux-logger": "^3.0.6",
+        "redux-persist": "^6.0.0",
         "redux-thunk": "^2.3.0"
     },
     "scripts": {
@@ -28,7 +29,8 @@
         "pre-commit": "npm run lint",
         "pre-push": "npm test",
         "post-merge": "npm install",
-        "post-rewrite": "npm install"
+        "post-rewrite": "npm install",
+        "pretest": "./node_modules/.bin/eslint --ignore-path .gitignore . --fix"
     },
     "eslintConfig": {
         "extends": "react-app"
@@ -53,5 +55,10 @@
         "eslint-plugin-react": "^7.20.6",
         "eslint-plugin-react-hooks": "^4.1.2",
         "husky": "^4.3.0"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run pretest"
+        }
     }
 }

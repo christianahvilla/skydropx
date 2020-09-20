@@ -1,7 +1,7 @@
-import { tvConstants } from '../helpers/Constants';
+import { popularConstants } from '../helpers/Constants';
 
 const initialState = {
-    tv: [],
+    popular: [],
     loading: false,
     error: '',
     total_pages: 0,
@@ -11,24 +11,24 @@ const initialState = {
 
 export default (state = initialState, action) => {
     switch (action.type) {
-    case tvConstants.FETCH_TV_BEGIN:
+    case popularConstants.FETCH_POPULAR_BEGIN:
         return {
             ...state,
             loading: true,
             error: '',
         };
 
-    case tvConstants.FETCH_TV_SUCCESS:
+    case popularConstants.FETCH_POPULAR_SUCCESS:
         return {
             ...state,
             loading: false,
-            tv: action.payload.results,
+            popular: action.payload.results,
             page: action.payload.page,
             total_pages: action.payload.total_pages,
             total_results: action.payload.total_results,
         };
 
-    case tvConstants.FETCH_TV_ERROR:
+    case popularConstants.FETCH_POPULAR_ERROR:
         return { ...state, loading: false, error: action.payload };
 
     default:

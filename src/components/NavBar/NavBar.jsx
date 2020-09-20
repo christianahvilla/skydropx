@@ -11,7 +11,7 @@ const NavBar = () => {
                 className="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding navbar__link"
                 to="/"
             >
-                Tv
+                Popular
             </NavLink>
             <NavLink
                 activeClassName="w3-border-red"

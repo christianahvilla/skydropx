@@ -1,7 +1,7 @@
-export const tvConstants = {
-    FETCH_TV_BEGIN: 'FETCH_TV_BEGIN',
-    FETCH_TV_SUCCESS: 'FETCH_TV_SUCCESS',
-    FETCH_TV_ERROR: 'FETCH_TV_ERROR',
+export const popularConstants = {
+    FETCH_POPULAR_BEGIN: 'FETCH_POPULAR_BEGIN',
+    FETCH_POPULAR_SUCCESS: 'FETCH_POPULAR_SUCCESS',
+    FETCH_POPULAR_ERROR: 'FETCH_POPULAR_ERROR',
 };
 
 export const ratedConstants = {
