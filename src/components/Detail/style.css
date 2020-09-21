@@ -1,16 +1,4 @@
-.fw-300{
-    font-weight: 300;
-}
-
-.centrar-texto{
-    text-align: center;
-}
-
-.contenido-centrado{
-    max-width: 800px;
-}
-
-.resumen-propiedad{
+.overview-propiedad{
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -1,4 +1,4 @@
-import { ratedConstants } from '../helpers/Constants';
+import { ratedConstants } from '../helpers/constants';
 
 const initialState = {
     rated: [],

@@ -1,4 +1,4 @@
-import { detailConstants } from '../helpers/Constants';
+import { detailConstants } from '../helpers/constants';
 
 // ---------------------- Fetch --------------------------------------------------
 const fetchDetailBegin = () => ({

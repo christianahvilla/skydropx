@@ -1,4 +1,4 @@
-import { onAirConstants } from '../helpers/Constants';
+import { onAirConstants } from '../helpers/constants';
 
 // ---------------------- Fetch --------------------------------------------------
 const fetchOnAirBegin = () => ({

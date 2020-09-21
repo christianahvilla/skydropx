@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import ratedActions from '../actions/Rated';
+import ratedActions from '../actions/rated';
 import CardContainer from '../components/CardContainer/CardContainer';
 import Loader from '../components/Loader/Loader';
 import Pagination from '../components/Pagination/Pagination';
-import { getQueryPayload } from '../helpers/Api';
+import { getQueryPayload } from '../helpers/api';
 
 const Rated = () => {
     const url = `${process.env.REACT_APP_API_URL}/tv/top_rated`;

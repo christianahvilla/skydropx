@@ -1,41 +1,40 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './NewBar.css';
+import './style.css';
 
 const NavBar = () => {
     return (
         <header className="site-header">
-            <div className="contenedor">
-                <div className="barra">
+            <div className="navbar-container">
+                <div className="bar">
                     <a href="/">
                         <h1 className="no-margin">
                             Skydrop
                             <span>X</span>
                         </h1>
                     </a>
-                    <nav className="navegacion">
+                    <nav className="navigation">
                         <NavLink
                             exact
-                            activeClassName="navbar__link--active"
+                            activeClassName="navbar-active"
                             to="/"
                         >
                             Popular
                         </NavLink>
                         <NavLink
-                            activeClassName="navbar__link--active"
+                            activeClassName="navbar-active"
                             to="/on_air"
                         >
                             On Air
                         </NavLink>
                         <NavLink
-                            activeClassName="navbar__link--active"
+                            activeClassName="navbar-active"
                             to="/rated"
                         >
                             Rated
                         </NavLink>
                     </nav>
                 </div>
-
             </div>
         </header>
     );

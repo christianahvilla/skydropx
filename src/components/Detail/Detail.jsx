@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import Image from '../Image/Image';
-import detailActions from '../../actions/Detail';
-import { getQueryPayload } from '../../helpers/Api';
+import detailActions from '../../actions/detail';
+import { getQueryPayload } from '../../helpers/api';
 import Loader from '../Loader/Loader';
-import './Detail.css';
+import './style.css';
 
 const Detail = () => {
     const { id } = useParams();
@@ -46,9 +46,9 @@ const Detail = () => {
                         </div>
                         <div>
                             <h1 className="fw-300 centrar-texto">{detail.detail.name}</h1>
-                            <main className="container section contenido-centrado">
-                                <div className="resumen-propiedad">
-                                    <p className="precio">{detail.detail.vote_average}</p>
+                            <main className="container section content-centered">
+                                <div className="overview">
+                                    <p className="voted">{detail.detail.vote_average}</p>
                                 </div>
                                 <p>{detail.detail.overview}</p>
                             </main>

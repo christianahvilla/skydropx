@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import popularActions from '../actions/Popular';
+import popularActions from '../actions/popular';
 import CardContainer from '../components/CardContainer/CardContainer';
 import Loader from '../components/Loader/Loader';
 import Pagination from '../components/Pagination/Pagination';
-import { getQueryPayload } from '../helpers/Api';
+import { getQueryPayload } from '../helpers/api';
 
 const Popular = () => {
     const url = `${process.env.REACT_APP_API_URL}/tv/popular`;

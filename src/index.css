@@ -1,14 +1,10 @@
-body {
-    background-color: #F9F9F9;
-}
-
-/**Utilidades**/
+/**Utilities **/
 .section{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-/**Globales**/
+/**Global**/
 .container{
     width: 95%;
     max-width: 120rem;
@@ -18,4 +14,20 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.d-block{
+    display: block!important;
+}
+
+.content-centered{
+    max-width: 800px;
+}
+
+.fw-300{
+    font-weight: 300;
+}
+
+.text-centered{
+    text-align: center;
 }

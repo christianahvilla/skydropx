@@ -1,4 +1,4 @@
-import { popularConstants } from '../helpers/Constants';
+import { popularConstants } from '../helpers/constants';
 
 // ---------------------- Fetch --------------------------------------------------
 const fetchPopularBegin = () => ({

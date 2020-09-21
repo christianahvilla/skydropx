@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import onAirActions from '../actions/OnAir';
+import onAirActions from '../actions/onAir';
 import CardContainer from '../components/CardContainer/CardContainer';
 import Loader from '../components/Loader/Loader';
 import Pagination from '../components/Pagination/Pagination';
-import { getQueryPayload } from '../helpers/Api';
+import { getQueryPayload } from '../helpers/api';
 
 const OnAir = () => {
     const url = `${process.env.REACT_APP_API_URL}/tv/on_the_air`;

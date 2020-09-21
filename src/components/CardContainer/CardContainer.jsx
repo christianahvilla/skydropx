@@ -1,6 +1,6 @@
 import React from 'react';
 import CardItem from '../CardItem/CardItem';
-import './CardContainer.css';
+import './style.css';
 
 const CardContainer = (props) => {
     const {
