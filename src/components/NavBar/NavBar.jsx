@@ -1,33 +1,43 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './navbar.css';
+import './NewBar.css';
 
 const NavBar = () => {
     return (
-        <div className="w3-row">
-            <NavLink
-                exact
-                activeClassName="w3-border-red"
-                className="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding navbar__link"
-                to="/"
-            >
-                Popular
-            </NavLink>
-            <NavLink
-                activeClassName="w3-border-red"
-                className="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding navbar__link"
-                to="/on_air"
-            >
-                On Air
-            </NavLink>
-            <NavLink
-                activeClassName="w3-border-red"
-                className="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding navbar__link"
-                to="/rated"
-            >
-                Rated
-            </NavLink>
-        </div>
+        <header className="site-header">
+            <div className="contenedor">
+                <div className="barra">
+                    <a href="/">
+                        <h1 className="no-margin">
+                            Skydrop
+                            <span>X</span>
+                        </h1>
+                    </a>
+                    <nav className="navegacion">
+                        <NavLink
+                            exact
+                            activeClassName="navbar__link--active"
+                            to="/"
+                        >
+                            Popular
+                        </NavLink>
+                        <NavLink
+                            activeClassName="navbar__link--active"
+                            to="/on_air"
+                        >
+                            On Air
+                        </NavLink>
+                        <NavLink
+                            activeClassName="navbar__link--active"
+                            to="/rated"
+                        >
+                            Rated
+                        </NavLink>
+                    </nav>
+                </div>
+
+            </div>
+        </header>
     );
 };
 

@@ -1,12 +1,16 @@
 import React from 'react';
+import './Image.css';
 
 const Image = (props) => {
     const {
-        src,
+        poster_path,
         alt,
     } = props;
+
+    const src = `${process.env.REACT_APP_IMAGE_URL}${poster_path}`;
+
     return (
-        <img src={src} alt={alt} />
+        <img className="images" src={src} alt={alt} />
     );
 };
 

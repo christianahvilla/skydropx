@@ -1,0 +1,21 @@
+body {
+    background-color: #F9F9F9;
+}
+
+/**Utilidades**/
+.section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/**Globales**/
+.container{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+    margin-top: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
