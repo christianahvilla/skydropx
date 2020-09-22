@@ -10,13 +10,14 @@ const DetailContainer = (props) => {
             vote_average,
             overview,
             languages,
+            poster_path,
         },
     } = props;
 
     return (
         <div className="detail-container">
             <div>
-                <Image poster_path={backdrop_path} alt={name} />
+                <Image poster_path={backdrop_path || poster_path} alt={name} />
             </div>
             <div>
                 <h1 className="fw-300 centrar-texto">{name}</h1>

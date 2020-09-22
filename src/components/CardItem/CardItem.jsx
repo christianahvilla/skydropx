@@ -10,12 +10,13 @@ const CardItem = (props) => {
             vote_average,
             poster_path,
             id,
+            backdrop_path,
         },
     } = props;
 
     return (
         <div className="item">
-            <Image poster_path={poster_path} alt={name} />
+            <Image poster_path={poster_path || backdrop_path} alt={name} />
             <div className="content-item">
                 <h3>{name}</h3>
                 <p className="voted">
