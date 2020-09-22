@@ -15,10 +15,19 @@
         flex-shrink: 0;
         flex-basis: calc(20% - 1rem);
     }
+    .content-item{
+        padding: 2rem auto;
+    }
+    .button{
+        display: inline-block;
+        flex: 0 0 auto;
+    }
 }
+
 .content-item{
-    padding: 2rem auto;
+    padding-bottom: 1rem;
 }
+
 .content-item h3{
     width:300px;
     white-space: nowrap;
@@ -50,12 +59,7 @@
     border: none;
     background-color:#3498db;
 }
-@media (min-width: 768px){
-    .button{
-        display: inline-block;
-        flex: 0 0 auto;
-    }
-}
+
 .button:hover{
     cursor: pointer;
     background-color: #005892;
