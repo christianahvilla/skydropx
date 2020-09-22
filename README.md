@@ -1,3 +1,34 @@
+# Skydropx
+Skydropx is a react application to get data from an API
+
+### Built With
+* [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js.
+
+* [Redux](https://redux.js.org/) - A Predictable State Container for JS Apps.
+
+* [React-Hooks](https://en.reactjs.org/docs/hooks-intro.html) - Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+
+* [Jest](https://jestjs.io/) - Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
+
+### Prerequisites
+* Node v12.11.0
+* NPM 6.11.3
+
+### Installing
+* Clone or download repo.
+* Run npm i.
+* Run npm start.
+
+### Author
+
+* **Christian Alejandro Herrejon Villa** - *Full Stack Developer* - [Apex Systems](https://www.intersysconsulting.com/)
+
+### License
+
+This project is licensed under the GNU License - see the LICENSE file for details
+
+
+# About React Apps
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
