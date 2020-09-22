@@ -15,7 +15,7 @@ const CardContainer = (props) => {
         <main className="section container">
             <div className="container-items">
                 {items.map((item) => {
-                    return <CardItem item={item} />;
+                    return <CardItem item={item} key={item.id} />;
                 })}
             </div>
             <Pagination page={page} totalPages={total_pages} loadPage={loadPage} />
