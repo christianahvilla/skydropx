@@ -12,6 +12,10 @@ p{
     margin: 0;
 }
 
+.great {
+    font-size: x-large;
+}
+
 .detail-container{
     width: 90%;
     display: flex;

@@ -25,7 +25,7 @@ const DetailContainer = (props) => {
                         <div>
                             <div>
                                 <p>Score: </p>
-                                <p className="voted">
+                                <p className="voted great">
                                     <span>{vote_average}</span>
                                     /10
                                     {' '}
