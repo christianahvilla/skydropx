@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import onAirActions from '../actions/onAir';
 import CardContainer from '../components/CardContainer/CardContainer';
 import Loader from '../components/Loader/Loader';
-import Pagination from '../components/Pagination/Pagination';
 import { getQueryPayload } from '../helpers/api';
 
 const OnAir = () => {
@@ -43,11 +42,10 @@ const OnAir = () => {
 
     return (
         <div>
-            <Pagination page={onAir.page} totalPages={onAir.total_pages} loadPage={loadPage} />
             {onAir.loading ? <Loader />
                 : (
                     <div>
-                        <CardContainer items={onAir.onAir} />
+                        <CardContainer page={onAir.page} total_pages={onAir.total_pages} loadPage={loadPage} items={onAir.onAir} />
                     </div>
                 )}
         </div>

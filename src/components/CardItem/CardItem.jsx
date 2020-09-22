@@ -18,7 +18,14 @@ const CardItem = (props) => {
             <Image poster_path={poster_path} alt={name} />
             <div className="content-item">
                 <h3>{name}</h3>
-                <p className="voted">{vote_average}</p>
+                <p className="voted">
+                    Score:
+                    {' '}
+                    <span>{vote_average}</span>
+                    /10
+                    {' '}
+                    <i className="far fa-heart" />
+                </p>
                 <Link to={`/detail/${id}`}>
                     <button type="button" className="button d-block">See Details</button>
                 </Link>

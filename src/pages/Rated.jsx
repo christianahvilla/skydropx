@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import ratedActions from '../actions/rated';
 import CardContainer from '../components/CardContainer/CardContainer';
 import Loader from '../components/Loader/Loader';
-import Pagination from '../components/Pagination/Pagination';
 import { getQueryPayload } from '../helpers/api';
 
 const Rated = () => {
@@ -43,11 +42,10 @@ const Rated = () => {
 
     return (
         <div>
-            <Pagination page={rated.page} totalPages={rated.total_pages} loadPage={loadPage} />
             {rated.loading ? <Loader />
                 : (
                     <div>
-                        <CardContainer items={rated.rated} />
+                        <CardContainer page={rated.page} total_pages={rated.total_pages} loadPage={loadPage} items={rated.rated} />
                     </div>
                 )}
         </div>

@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import popularActions from '../actions/popular';
 import CardContainer from '../components/CardContainer/CardContainer';
 import Loader from '../components/Loader/Loader';
-import Pagination from '../components/Pagination/Pagination';
 import { getQueryPayload } from '../helpers/api';
 
 const Popular = () => {
@@ -43,11 +42,10 @@ const Popular = () => {
 
     return (
         <div>
-            <Pagination page={popular.page} totalPages={popular.total_pages} loadPage={loadPage} />
             {popular.loading ? <Loader />
                 : (
                     <div>
-                        <CardContainer items={popular.popular} />
+                        <CardContainer page={popular.page} total_pages={popular.total_pages} loadPage={loadPage} items={popular.popular} />
                     </div>
                 )}
         </div>

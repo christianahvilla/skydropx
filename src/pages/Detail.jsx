@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import Image from '../Image/Image';
-import detailActions from '../../actions/detail';
-import { getQueryPayload } from '../../helpers/api';
-import Loader from '../Loader/Loader';
-import './style.css';
+import detailActions from '../actions/detail';
+import { getQueryPayload } from '../helpers/api';
+import Loader from '../components/Loader/Loader';
+import DetailContainer from '../components/Detail/DetailContainer';
 
 const Detail = () => {
     const { id } = useParams();
@@ -35,24 +34,12 @@ const Detail = () => {
         getDetail();
     // eslint-disable-next-line
     }, []);
-
     return (
         <div>
             {detail.loading ? <Loader />
                 : (
-                    <div className="detail-container">
-                        <div>
-                            <Image poster_path={detail.detail.backdrop_path} alt={detail.detail.name} />
-                        </div>
-                        <div>
-                            <h1 className="fw-300 centrar-texto">{detail.detail.name}</h1>
-                            <main className="container section content-centered">
-                                <div className="overview">
-                                    <p className="voted">{detail.detail.vote_average}</p>
-                                </div>
-                                <p>{detail.detail.overview}</p>
-                            </main>
-                        </div>
+                    <div>
+                        <DetailContainer detail={detail.detail} />
                     </div>
                 )}
         </div>

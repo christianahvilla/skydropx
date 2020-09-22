@@ -15,10 +15,10 @@ const fetchDetailError = (response) => ({
     payload: response.data,
 });
 
-const onAirActions = {
+const detailActions = {
     fetchDetailBegin,
     fetchDetailSuccess,
     fetchDetailError,
 };
 
-export default onAirActions;
+export default detailActions;

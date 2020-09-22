@@ -3,7 +3,7 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 import Popular from '../pages/Popular';
 import OnAir from '../pages/OnAir';
 import Rated from '../pages/Rated';
-import Detail from '../components/Detail/Detail';
+import Detail from '../pages/Detail';
 
 const Routes = () => (
     <Switch>

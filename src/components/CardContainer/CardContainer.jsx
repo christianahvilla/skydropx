@@ -1,10 +1,14 @@
 import React from 'react';
 import CardItem from '../CardItem/CardItem';
+import Pagination from '../Pagination/Pagination';
 import './style.css';
 
 const CardContainer = (props) => {
     const {
         items,
+        page,
+        total_pages,
+        loadPage,
     } = props;
 
     return (
@@ -14,6 +18,7 @@ const CardContainer = (props) => {
                     return <CardItem item={item} />;
                 })}
             </div>
+            <Pagination page={page} totalPages={total_pages} loadPage={loadPage} />
         </main>
     );
 };
